@@ -6,7 +6,7 @@ import { useState } from "react";
 
 function App() {
   const [bookmarks, setBookmarks] = useState([])
-  const [readingTime, setReadingTime] = useState([])
+  const [readingTime, setReadingTime] = useState(0)
 
   const handleAddToBookmark =(blog) => {
    const newBookmarks = [...bookmarks, blog]
